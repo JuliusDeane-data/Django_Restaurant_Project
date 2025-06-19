@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import AnonymousUser
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 from django.views import View
 from django.views.generic import ListView, DetailView
 
@@ -33,6 +34,7 @@ class OrderView(View):
                     OrderTransaction.objects.create(meal=got_meal, customer=request.user, amount=got_meal.price)
                     got_meal.stock -= 1
                     got_meal.save()
+                    messages.success(request, message=f'"{got_meal.name}" added to your cart.')
 
                     return redirect('index')
         return HttpResponse(HTTPStatus.BAD_REQUEST)
@@ -40,7 +42,7 @@ class OrderView(View):
 
 class DetailsView(ListView):
     context_object_name = 'transactions'
-    template_name = 'restaurant/details.html'
+    template_name = 'restaurant/cart.html'
 
     def get_queryset(self):
         return OrderTransaction.objects.filter(customer=self.request.user)
