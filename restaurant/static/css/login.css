@@ -1,0 +1,10 @@
+.login-image{
+    background-image: url("../img/restaurant-header.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    overflow: hidden;
+}

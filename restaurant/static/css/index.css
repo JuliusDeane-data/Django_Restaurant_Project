@@ -1,0 +1,64 @@
+.hero{
+    min-height: 100vh;
+    background-image: url("../img/restaurant-header.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+    
+}
+
+.welcome{
+    font-size: 100px;
+    font-weight: 600;
+    
+}
+
+.vertical-align-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.meal-content{
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.meal-image{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.meal-name{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.meal-price{
+    font-size: 20px;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+.meal-stock{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stock{
+    color: brown;
+}
+
+.order-button-align{
+    display: flex;
+    justify-content: right;
+}
