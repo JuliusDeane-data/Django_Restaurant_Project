@@ -49,7 +49,7 @@ To run this project locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/JuliusDeane-data/Django_Restaurant_Project.git](https://github.com/JuliusDeane-data/Django_Restaurant_Project.git)
+    git clone https://github.com/JuliusDeane-data/Django_Restaurant_Project.git
     cd Django_Restaurant_Project
     ```
 2.  **Create and activate a virtual environment:**
